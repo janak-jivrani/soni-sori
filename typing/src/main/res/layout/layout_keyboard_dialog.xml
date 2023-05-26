@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/info_dialog_background_white"
+    android:paddingStart="@dimen/spacing_4x"
+    android:paddingEnd="@dimen/spacing_4x"
+    android:paddingTop="@dimen/spacing_8x">
+
+    <ImageView
+        android:id="@+id/img_keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/spacing_8x"
+        android:src="@drawable/ic_group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="?textAppearanceEmphasized1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/spacing_8x"
+        android:text="@string/do_you_own_a_keyboard"
+        android:textColor="?textPrimary"
+        app:layout_constraintTop_toBottomOf="@id/img_keyboard" />
+
+    <TextView
+        android:id="@+id/tv_caption"
+        style="?textAppearanceCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_4x"
+        android:gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/spacing_8x"
+        android:layout_marginStart="@dimen/spacing_8x"
+        android:text="@string/keyboard_purchase_hint"
+        android:textColor="?textSecondary"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        style="?textAppearanceCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_4x"
+        android:gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/spacing_8x"
+        android:layout_marginStart="@dimen/spacing_8x"
+        android:textColor="?textSecondary"
+        app:layout_constraintTop_toBottomOf="@id/tv_caption" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_own"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_6x"
+        android:layout_marginBottom="@dimen/spacing_6x"
+        android:layout_marginEnd="@dimen/spacing_1x"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/i_have_one_already"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_purchase"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:textAllCaps="false"
+        app:strokeColor="?colorPrimary"
+        app:strokeWidth="2dp"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_info" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_purchase"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/purchase_new"
+        android:textAllCaps="false"
+        android:layout_marginStart="@dimen/spacing_1x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_own"
+        app:layout_constraintTop_toTopOf="@id/btn_own" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

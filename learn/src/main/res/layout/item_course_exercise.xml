@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_exercise_type_progress"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="@dimen/dimen_2_dp"
+        tools:src="@drawable/ic_type_text_selected"
+        tools:ignore="ContentDescription" />
+
+</layout>

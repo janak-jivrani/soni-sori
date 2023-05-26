@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="course_item_card_view">
+        <item name="cardElevation">?elevation200</item>
+        <item name="cardCornerRadius">?cornerRadius400</item>
+        <item name="contentPaddingTop">@dimen/spacing_4x</item>
+        <item name="contentPaddingLeft">@dimen/spacing_3x</item>
+        <item name="contentPaddingRight">@dimen/spacing_4x</item>
+        <item name="contentPaddingBottom">@dimen/spacing_4x</item>
+        <item name="backgroundColor">?backgroundColor</item>
+    </style>
+
+    <style name="text_view_profile">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:padding">@dimen/dimen_5_dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_5_dp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_5_dp</item>
+        <item name="android:fontFamily">@font/n_regular</item>
+
+    </style>
+
+    <style name="text_view_course_status">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_5_dp</item>
+        <item name="android:textColor">#665D5D</item>
+        <item name="android:fontFamily">@font/n_regular</item>
+    </style>
+
+    <style name="text_view_course_category">
+        <item name="android:layout_marginLeft">@dimen/dimen_20_dp</item>
+        <item name="android:padding">@dimen/dimen_10_dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginStart">@dimen/dimen_20_dp</item>
+        <item name="android:textColor">#1F1C1C</item>
+        <item name="android:fontFamily">@font/n_bold</item>
+    </style>
+
+    <style name="text_view_exercise_title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:padding">@dimen/dimen_5_dp</item>
+        <item name="android:fontFamily">@font/n_semi_bold</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_5_dp</item>
+    </style>
+
+    <style name="course_content_header">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:padding">@dimen/dimen_10_dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_10_dp</item>
+    </style>
+
+
+    <dimen name="dimen_20_dp">20dp</dimen>
+    <dimen name="dimen_16_dp">16dp</dimen>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/sheet_background</item>
+    </style>
+    <style name="Widget.MyApp.Chip.Choice" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.MyApp.Chip.Choice</item>
+    </style>
+    <style name="ThemeOverlay.MyApp.Chip.Choice" parent="">
+        <item name="elevationOverlayEnabled">false</item>
+    </style>
+
+    <style name="button_rounded">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/spacing_3x</item>
+        <item name="android:paddingBottom">@dimen/spacing_3x</item>
+        <item name="android:paddingEnd">@dimen/spacing_2x</item>
+        <item name="android:paddingStart">@dimen/spacing_2x</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_1x</item>
+        <item name="android:background">@drawable/button_rounded</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+        <item name="android:textColor">@color/green_progress_color</item>
+    </style>
+</resources>
